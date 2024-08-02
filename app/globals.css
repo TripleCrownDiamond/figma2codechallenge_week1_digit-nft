@@ -26,7 +26,7 @@
 }
 
 @layer utilities {
-  /* Appliquer des marges différentes en fonction de la taille de l'écran */
+  /* Assurez-vous que les media queries n'ont pas de chevauchement */
   @media (max-width: 1148px) {
     .custom-mx {
       @apply custom-mx-md;
@@ -34,6 +34,13 @@
   }
 
   @media (max-width: 768px) {
+    .custom-mx {
+      @apply custom-mx-sm;
+    }
+  }
+
+  /* Media query pour les très petits écrans */
+  @media (max-width: 660px) {
     .custom-mx {
       @apply custom-mx-sm;
     }

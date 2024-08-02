@@ -9,5 +9,24 @@
     --neutral-700: #12171F;
     --neutral-800: #0E1218;
     --neutral-900: #0B0D12;
+
+    --hero-title-lg: 120px;
+    --hero-title-md: 105px;
+    --hero-title-sm: 70px;
+    --hero-title-xs: 50px;
+    --hero-line-height-lg: 108px;
+    --hero-line-height-md: 60px;
+    --hero-line-height-sm: 50px;
+    --hero-margin-top: 50px;
+    --hero-padding: 10px;
+    --hero-gap: 20px;
+    --image-width-lg: 287.58px;
+    --image-height-lg: 442.29px;
+    --image-width-sm: 60%;
+
+    --margin-lg: 120px;
+    --margin-md: 46px;
+    --margin-sm: 20px;
+    --margin-xs: 10px;
 }
   
