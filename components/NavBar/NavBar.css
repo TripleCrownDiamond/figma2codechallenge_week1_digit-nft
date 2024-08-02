@@ -38,7 +38,7 @@ header {
   transition: width 0.3s ease;
 }
 
-.navbar-link:hover::after, .navbar-custom-link:hover::after, .navbar-link_tablet:hover::after, .navbar-custom-link_tablet::after {
+.navbar-link:hover::after, .navbar-custom-link:hover::after, .navbar-link_tablet:hover::after {
   width: 100%;
 }
 
