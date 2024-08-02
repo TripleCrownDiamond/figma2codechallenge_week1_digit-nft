@@ -11,7 +11,11 @@ const images = {
   snoop_dogg: "/images/7.png",
   astronaut_picture: "/images/8.png",
   hero_cta_btn: "/images/hero_cta_btn.png",
-  ethereum_ellipse: "/images/ethereum-ellipse.png"
+  ethereum_ellipse: "/images/ethereum-ellipse.png",
+  icon1: "/images/icon1.png",
+  icon2: "/images/icon2.png",
+  icon3: "/images/icon3.png",
+  icon4: "/images/icon4.png"
 };
 
 export default images;
