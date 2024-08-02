@@ -17,10 +17,10 @@ const NavBar: React.FC = () => {
     <header>
       {/* Menu popup */}
       {isMenuOpen && (
-        <div className="top-0 right-0 h-screen bg-white popup-menu flex">
+        <div className="navbar-popup-menu top-0 right-0 h-screen bg-white flex">
           <div className="visible-below-1148 flex h-70 items-center mt-5 mb-32">
             <div
-              className="burger-menu focus:outline-none focus:ring-2 float-end"
+              className="navbar-burger-menu focus:outline-none focus:ring-2 float-end"
               onClick={toggleMenu}
             >
               <Image
@@ -32,29 +32,29 @@ const NavBar: React.FC = () => {
             </div>
           </div>
           <div className="mx-12 mb-16">
-            <ul className="flex flex-col nav-link_gap">
+            <ul className="flex flex-col navbar-links_gap">
               <li>
-                <Link className="nav-link_tablet block" href="#">
+                <Link className="navbar-link_tablet block" href="#">
                   Home
                 </Link>
               </li>
               <li>
-                <Link className="nav-link_tablet block" href="#">
+                <Link className="navbar-link_tablet block" href="#">
                   Top Sales
                 </Link>
               </li>
               <li>
-                <Link className="nav-link_tablet block" href="#">
+                <Link className="navbar-link_tablet block" href="#">
                   Collections
                 </Link>
               </li>
               <li>
-                <Link className="nav-link_tablet block" href="#">
+                <Link className="navbar-link_tablet block" href="#">
                   Our Blog
                 </Link>
               </li>
               <li>
-                <Link className="nav-link_tablet block" href="#">
+                <Link className="navbar-link_tablet block" href="#">
                   About Us
                 </Link>
               </li>
@@ -62,10 +62,10 @@ const NavBar: React.FC = () => {
           </div>
           <div className="visible-below-1148">
             <div className="flex flex-row mx-12">
-              <Link className="custom_nav-link_tablet" href="#">
+              <Link className="navbar-custom-link_tablet" href="#">
                 Sign Up
               </Link>
-              <Link className="btn-dark_tablet" href="#">
+              <Link className="navbar-btn-dark_tablet" href="#">
                 Connect Wallet
               </Link>
             </div>
@@ -83,7 +83,7 @@ const NavBar: React.FC = () => {
       {/* Menu button for mobile */}
       <div className="visible-below-1148">
         <div
-          className="burger-menu focus:outline-none focus:ring-2"
+          className="navbar-burger-menu focus:outline-none focus:ring-2"
           onClick={toggleMenu}
         >
           <Image src={images.mobile_menu} alt="menu" width={20} height={20} />
@@ -92,29 +92,29 @@ const NavBar: React.FC = () => {
 
       {/* Navigation links for desktop */}
       <div className="hidden-below-1148">
-        <ul className="flex flex-row nav-link_gap">
+        <ul className="flex flex-row navbar-links_gap">
           <li>
-            <Link className="nav-link" href="#">
+            <Link className="navbar-link" href="#">
               Home
             </Link>
           </li>
           <li>
-            <Link className="nav-link" href="#">
+            <Link className="navbar-link" href="#">
               Top Sales
             </Link>
           </li>
           <li>
-            <Link className="nav-link" href="#">
+            <Link className="navbar-link" href="#">
               Collections
             </Link>
           </li>
           <li>
-            <Link className="nav-link" href="#">
+            <Link className="navbar-link" href="#">
               Our Blog
             </Link>
           </li>
           <li>
-            <Link className="nav-link" href="#">
+            <Link className="navbar-link" href="#">
               About Us
             </Link>
           </li>
@@ -124,10 +124,10 @@ const NavBar: React.FC = () => {
       {/* Action buttons for desktop */}
       <div className="hidden-below-1148">
         <div className="flex flex-row justify-end">
-          <Link className="custom_nav-link" href="#">
+          <Link className="navbar-custom-link" href="#">
             Sign Up
           </Link>
-          <Link className="btn-dark" href="#">
+          <Link className="navbar-btn-dark" href="#">
             Connect Wallet
           </Link>
         </div>

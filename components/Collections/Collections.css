@@ -196,4 +196,26 @@
 }
 
 @media (max-width: 610px) {
+  .collections-section_container {
+    overflow: hidden;
+  }
+
+  .collections-categories_container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .categories {
+    width: 100%;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+
+  .category {
+    flex: 1 0 30%; 
+    margin: 5px 0; 
+    text-align: center;
+  }
 }
+

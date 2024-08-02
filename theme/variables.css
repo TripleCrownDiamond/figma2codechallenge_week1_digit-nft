@@ -28,5 +28,26 @@
     --margin-md: 46px;
     --margin-sm: 20px;
     --margin-xs: 10px;
+
+    --font-size-lg: 16px;
+    --font-size-md: 14px;
+    --font-size-sm: 14px;
+
+    --btn-dark-padding: 10px 24px;
+    --btn-dark-border-radius: 42px;
+    --burger-menu-size: 32px;
+    --burger-menu-bg-color: var(--neutral-50);
+    --popup-menu-width-lg: 492px;
+    --popup-menu-width-sm: 346px;
+    --popup-menu-box-shadow: -8px 0 8px -4px var(--neutral-50);
+
+    --nav-link-gap: 28px;
+    --nav-link-padding: 4px;
+    --nav-link-margin: 6px 0;
+    --nav-link-border-right: 2px solid var(--neutral-700);
+    --nav-link-hover-bg-color: var(--neutral-700);
+    --nav-link-hover-color: white;
+    --nav-link-hover-transform: scale(1.05);
+
+    --popup-menu-display: none;
 }
-  

@@ -1,8 +1,6 @@
-@import '../../theme/variables.css';
-
 /* Styles généraux */
 header {
-  margin-bottom: 10px;
+  margin-bottom: var(--margin-xs);
   width: 100%;
   height: 70px;
   display: flex;
@@ -11,25 +9,25 @@ header {
   position: relative;
 }
 
-.nav-link_gap {
-  gap: 28px;
+.navbar-links_gap {
+  gap: var(--nav-link-gap);
 }
 
-.nav-link, .nav-link_tablet, .custom_nav-link, .custom_nav-link_tablet {
+.navbar-link, .navbar-link_tablet, .navbar-custom-link, .navbar-custom-link_tablet {
   color: var(--neutral-700);
   font-weight: 600;
   position: relative;
 }
 
-.nav-link, .custom_nav-link {
-  font-size: 16px;
+.navbar-link, .navbar-custom-link {
+  font-size: var(--font-size-lg);
 }
 
-.nav-link_tablet, .custom_nav-link_tablet {
-  font-size: 14px;
+.navbar-link_tablet, .navbar-custom-link_tablet {
+  font-size: var(--font-size-md);
 }
 
-.nav-link::after, .custom_nav-link::after, .nav-link_tablet::after, .custom_nav-link_tablet::after {
+.navbar-link::after, .navbar-custom-link::after, .navbar-link_tablet::after, .navbar-custom-link_tablet::after {
   content: '';
   position: absolute;
   left: 0;
@@ -40,39 +38,39 @@ header {
   transition: width 0.3s ease;
 }
 
-.nav-link:hover::after, .custom_nav-link:hover::after, .nav-link_tablet:hover::after, .custom_nav-link_tablet:hover::after {
+.navbar-link:hover::after, .navbar-custom-link:hover::after, .navbar-link_tablet:hover::after, .navbar-custom-link_tablet::after {
   width: 100%;
 }
 
-.custom_nav-link, .custom_nav-link_tablet {
-  padding: 4px;
-  margin: 6px 0;
-  border-right: 2px solid var(--neutral-700);
+.navbar-custom-link, .navbar-custom-link_tablet {
+  padding: var(--nav-link-padding);
+  margin: var(--nav-link-margin);
+  border-right: var(--nav-link-border-right);
   transition: all 0.3s ease;
 }
 
-.custom_nav-link:hover, .custom_nav-link_tablet:hover {
-  color: white;
-  background-color: var(--neutral-700);
-  transform: scale(1.05);
+.navbar-custom-link:hover, .navbar-custom-link_tablet:hover {
+  color: var(--nav-link-hover-color);
+  background-color: var(--nav-link-hover-bg-color);
+  transform: var(--nav-link-hover-transform);
 }
 
-.custom_nav-link {
+.navbar-custom-link {
   padding-left: 24px;
   padding-right: 24px;
 }
 
-.custom_nav-link_tablet {
+.navbar-custom-link_tablet {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.btn-dark, .btn-dark_tablet {
+.navbar-btn-dark, .navbar-btn-dark_tablet {
   font-weight: 600;
   margin-left: 20px;
   color: white;
   background-color: var(--neutral-700);
-  border-radius: 42px;
+  border-radius: var(--btn-dark-border-radius);
   border: 1px solid transparent;
   transition: background-color 0.3s ease,
               color 0.3s ease,
@@ -80,28 +78,28 @@ header {
               transform 0.3s ease;
 }
 
-.btn-dark {
-  font-size: 16px;
-  padding: 10px 24px;
+.navbar-btn-dark {
+  font-size: var(--font-size-lg);
+  padding: var(--btn-dark-padding);
 }
 
-.btn-dark_tablet {
-  font-size: 14px;
-  padding: 10px 24px;
+.navbar-btn-dark_tablet {
+  font-size: var(--font-size-md);
+  padding: var(--btn-dark-padding);
 }
 
-.btn-dark:hover, .btn-dark_tablet:hover {
+.navbar-btn-dark:hover, .navbar-btn-dark_tablet:hover {
   background-color: white;
   color: var(--neutral-700);
   border-color: var(--neutral-700);
   transform: scale(1.05);
 }
 
-.popup-menu {
-  width: 492px;
+.navbar-popup-menu {
+  width: var(--popup-menu-width-lg);
   position: absolute;
-  box-shadow: -8px 0 8px -4px var(--neutral-50);
-  display: none;
+  box-shadow: var(--popup-menu-box-shadow);
+  display: var(--popup-menu-display);
   z-index: 10;
 }
 
@@ -120,24 +118,24 @@ header {
   .visible-below-1148 {
     display: block;
   }
-  .popup-menu {
+  .navbar-popup-menu {
     display: block;
   }
 }
 
+@media (max-width: 600px) {
+  .navbar-popup-menu {
+    width: var(--popup-menu-width-sm);
+  }
+}
+
 /** Burger Menu **/
-.burger-menu {
+.navbar-burger-menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 32px;
-  height: 32px;
+  width: var(--burger-menu-size);
+  height: var(--burger-menu-size);
   border-radius: 8px;
-  background-color: var(--neutral-50);
-}
-
-@media (max-width: 600px) {
-  .popup-menu {
-    width: 346px;
-  }
+  background-color: var(--burger-menu-bg-color);
 }
