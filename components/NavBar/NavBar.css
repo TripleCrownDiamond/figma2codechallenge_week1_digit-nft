@@ -27,7 +27,7 @@ header {
   font-size: var(--font-size-md);
 }
 
-.navbar-link::after, .navbar-custom-link::after, .navbar-link_tablet::after, .navbar-custom-link_tablet::after {
+.navbar-link::after, .navbar-custom-link::after, .navbar-link_tablet::after {
   content: '';
   position: absolute;
   left: 0;
