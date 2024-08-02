@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @import '../theme/variables.css';
-  
 
 @layer base {
   body {
@@ -12,14 +11,50 @@
 }
 
 @layer components {
-  .custom-mx-30 {
+  .custom-mx-lg {
     margin-left: 120px;
     margin-right: 120px;
+  }
+  .custom-mx-md {
+    margin-left: 46px;
+    margin-right: 46px;
+  }
+  .custom-mx-sm {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@layer utilities {
+  /* Assurez-vous que les media queries n'ont pas de chevauchement */
+  @media (max-width: 1148px) {
+    .custom-mx {
+      @apply custom-mx-md;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .custom-mx {
+      @apply custom-mx-sm;
+    }
+  }
+
+  /* Media query pour les très petits écrans */
+  @media (max-width: 660px) {
+    .custom-mx {
+      @apply custom-mx-sm;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .custom-mx {
+      @apply custom-mx-sm;
+    }
   }
 }
 
 @layer components {
   main {
-    @apply flex justify-center items-center flex-col w-full custom-mx-30;
+    @apply flex justify-center items-center flex-col w-full custom-mx custom-mx-lg;
   }
 }
